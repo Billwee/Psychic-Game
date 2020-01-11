@@ -74,7 +74,7 @@ document.onkeyup = function(event) {
   if (guessesLeft >= 2) {
     if (keyPress.toLowerCase() !== randomLetter) {
       guessesLeft -= 1;
-      yourGuesses.push(' ' + keyPress.toLowerCase() + ' ');
+      yourGuesses.push(' ' + keyPress.toUpperCase() + ' ');
       guessedHTML.innerHTML = yourGuesses;
       guessesLeftHTML.innerHTML = guessesLeft;
     } else {
